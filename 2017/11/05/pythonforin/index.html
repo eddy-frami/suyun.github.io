@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="print 在循环里面和外面执行的区别  1234567891011sum = 0t = [1, 2, 3]for a in t:    sum = sum + a    print sum    sum = 0t = [1, 2, 3]for a in t:    sum = sum + aprint sum  第一段代码, print在循环里面执行, 参与循环, 每从数组里面取值一次, 就打">
+<meta name="description" content="print 在循环里面和外面执行的区别  1234567891011sum = 0t = [1, 2, 3]for a in t:    sum = sum + a    print sum    sum = 0t = [1, 2, 3]for a in t:    sum = sum + aprint sum  第一段代码, print 在循环里面执行, 参与循环, 每从数组里面取值一次, 就">
 <meta property="og:type" content="article">
 <meta property="og:title" content="python-forin1">
 <meta property="og:url" content="https://suyun.github.io/2017/11/05/pythonforin/index.html">
 <meta property="og:site_name" content="云中凤鸣">
-<meta property="og:description" content="print 在循环里面和外面执行的区别  1234567891011sum = 0t = [1, 2, 3]for a in t:    sum = sum + a    print sum    sum = 0t = [1, 2, 3]for a in t:    sum = sum + aprint sum  第一段代码, print在循环里面执行, 参与循环, 每从数组里面取值一次, 就打">
+<meta property="og:description" content="print 在循环里面和外面执行的区别  1234567891011sum = 0t = [1, 2, 3]for a in t:    sum = sum + a    print sum    sum = 0t = [1, 2, 3]for a in t:    sum = sum + aprint sum  第一段代码, print 在循环里面执行, 参与循环, 每从数组里面取值一次, 就">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-05T13:05:49.000Z">
+<meta property="og:updated_time" content="2017-11-05T13:20:58.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python-forin1">
-<meta name="twitter:description" content="print 在循环里面和外面执行的区别  1234567891011sum = 0t = [1, 2, 3]for a in t:    sum = sum + a    print sum    sum = 0t = [1, 2, 3]for a in t:    sum = sum + aprint sum  第一段代码, print在循环里面执行, 参与循环, 每从数组里面取值一次, 就打">
+<meta name="twitter:description" content="print 在循环里面和外面执行的区别  1234567891011sum = 0t = [1, 2, 3]for a in t:    sum = sum + a    print sum    sum = 0t = [1, 2, 3]for a in t:    sum = sum + aprint sum  第一段代码, print 在循环里面执行, 参与循环, 每从数组里面取值一次, 就">
 
 
 
@@ -303,7 +303,10 @@
 <p>print 在循环里面和外面执行的区别</p>
 </blockquote>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">sum = <span class="number">0</span></div><div class="line">t = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</div><div class="line"><span class="keyword">for</span> a <span class="keyword">in</span> t:</div><div class="line">    sum = sum + a</div><div class="line">    <span class="keyword">print</span> sum</div><div class="line">    </div><div class="line">sum = <span class="number">0</span></div><div class="line">t = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</div><div class="line"><span class="keyword">for</span> a <span class="keyword">in</span> t:</div><div class="line">    sum = sum + a</div><div class="line"><span class="keyword">print</span> sum</div></pre></td></tr></table></figure>
-<p> 第一段代码, print在循环里面执行, 参与循环, 每从数组里面取值一次, 就打印一个结果。最后循环几次, 就打印几个值。<br> 第二段代码, print在循环外面执行, 不参与循环, 当循环结束后, 打印循环结束后的结果。因此最后只打印一个结果。</p>
+<ul>
+<li>第一段代码, print 在循环里面执行, 参与循环, 每从数组里面取值一次, 就打印一个结果。最后循环几次, 就打印几个值。</li>
+<li>第二段代码, print 在循环外面执行, 不参与循环, 当循环结束后, 打印循环结束后的结果。因此最后只打印一个结果。 </li>
+</ul>
 
       
     </div>
@@ -328,8 +331,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/11/05/python1/" rel="next" title="python1">
-                <i class="fa fa-chevron-left"></i> python1
+              <a href="/2017/11/05/python1/" rel="next" title="Python1">
+                <i class="fa fa-chevron-left"></i> Python1
               </a>
             
           </div>
@@ -337,6 +340,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/11/05/Python2/" rel="prev" title="Python2">
+                Python2 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -408,7 +415,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
