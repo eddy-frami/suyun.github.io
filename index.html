@@ -308,7 +308,7 @@
 <ul>
 <li>查找年龄在17到20之间的学生</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">select * </div><div class="line">from student s</div><div class="line">where s.sage&gt;17 </div><div class="line">and s,sage&lt;20;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">select * </div><div class="line">from student s</div><div class="line">where s.sage&gt;17 </div><div class="line">and s.sage&lt;20;</div></pre></td></tr></table></figure>
 <p> 或者<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">select * </div><div class="line">from student s</div><div class="line">where s.sage between 17 and 20;</div></pre></td></tr></table></figure></p>
 <ul>
 <li>查找年龄不在17到20之间的学生</li>
@@ -347,6 +347,24 @@
 <li>按照部门进行分组,并统计每个部门的人数</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">select 部门, count(*)</div><div class="line">from t</div><div class="line">group by 部门</div></pre></td></tr></table></figure>
+<blockquote>
+<ol>
+<li>向表中新增信息</li>
+</ol>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">insert into table_name(字段1, 字段2, 字段3, ```)</div><div class="line">values(值1,值2,值3,```)</div></pre></td></tr></table></figure>
+<blockquote>
+<ol>
+<li>修改表中信息</li>
+</ol>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">update table_name</div><div class="line">set (字段1=值1,````)</div></pre></td></tr></table></figure>
+<blockquote>
+<ol>
+<li>删除表中数据</li>
+</ol>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">delete from table_name</div><div class="line">where 字段=某值</div></pre></td></tr></table></figure>
 
           
         
