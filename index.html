@@ -229,6 +229,172 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://suyun.github.io/2017/11/06/Sql/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="云素">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1509860881634&di=2704f17eb35fb2a8d6e29f11db42fc93&imgtype=0&src=http%3A%2F%2Fimg5.duitang.com%2Fuploads%2Fitem%2F201508%2F08%2F20150808101257_Chzun.thumb.224_0.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="云中凤鸣">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/11/06/Sql/" itemprop="url">Sql查询</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-06T18:51:59+08:00">
+                2017-11-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <blockquote>
+<ol>
+<li>某范围内查找</li>
+</ol>
+</blockquote>
+<ul>
+<li>查找年龄在17到20之间的学生</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">select * </div><div class="line">from student s</div><div class="line">where s.sage&gt;17 </div><div class="line">and s,sage&lt;20;</div></pre></td></tr></table></figure>
+<p> 或者<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">select * </div><div class="line">from student s</div><div class="line">where s.sage between 17 and 20;</div></pre></td></tr></table></figure></p>
+<ul>
+<li>查找年龄不在17到20之间的学生</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">select * </div><div class="line">from student s</div><div class="line">where s.sage not between 17 and 20;</div></pre></td></tr></table></figure>
+<blockquote>
+<ol>
+<li>模糊查询。使用 like 和通配符”%”, 进行模糊查询</li>
+</ol>
+</blockquote>
+<ul>
+<li><em>like <code>AB%</code> : 返回以 AB 开头的任意字符 </em></li>
+<li><em>like <code>_AB</code> : 返回以 AB 结束的三字字符 </em></li>
+<li><em>like <code>[ABC]%</code> : 返回以 A 或 B 或 C 开始的任意字符 </em></li>
+<li><em>like <code>[A]%</code> : 返回不是以 A 开头的任意字符 </em></li>
+</ul>
+<ul>
+<li>查找不姓刘的学生</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">select *</div><div class="line">from student t</div><div class="line">where t.sname not like &apos;刘%&apos;</div></pre></td></tr></table></figure>
+<blockquote>
+<ol>
+<li>排序 order by</li>
+</ol>
+</blockquote>
+<ul>
+<li>按照年龄升序,按照学降序</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">select *</div><div class="line">from student t</div><div class="line">where t.name like &apos;刘%&apos;</div><div class="line">order by t.sage asc, t.sno desc</div></pre></td></tr></table></figure>
+<blockquote>
+<ol>
+<li>分组查询 group by 与计数 count</li>
+</ol>
+</blockquote>
+<ul>
+<li>按照部门进行分组,并统计每个部门的人数</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">select 部门, count(*)</div><div class="line">from t</div><div class="line">group by 部门</div></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://suyun.github.io/2017/11/05/Python2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -693,7 +859,7 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> generate = &#123;</div><div class="line">    init : <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="keyword">this</span>)</div><div class="line">    &#125;,</div><div class="line">    getName: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="keyword">this</span>.name)</div><div class="line">    &#125;,</div><div class="line">    name: <span class="string">'zhaosuyun'</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2017/11/04/code-test/#espandi" rel="contents">
+            <a class="btn" href="/2017/11/04/code-test/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -781,7 +947,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
