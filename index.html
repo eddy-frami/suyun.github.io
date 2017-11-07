@@ -301,21 +301,33 @@
         
           
             <blockquote>
-<p>测试的生命周期</p>
+<p>本文为原创, 转载请保留本文地址</p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">参与需求评审---需求定稿---测试组长制定测试计划---测试人员编写测试用例---用例评审---执行用例---提交bug,确认修复,验证通过关闭bug---编写测试报告---编写安装文档或者使用手册---结束</div></pre></td></tr></table></figure>
-<blockquote>
-<p>软件测试手段之黑盒测试</p>
-</blockquote>
-<ol>
+<h4 id="测试的生命周期"><a href="#测试的生命周期" class="headerlink" title="测试的生命周期"></a>测试的生命周期</h4><ul>
+<li>参与需求评审</li>
+<li>需求定稿</li>
+<li>测试组长制定测试计划</li>
+<li>测试人员编写测试用例</li>
+<li>用例评审</li>
+<li>执行用例</li>
+<li>提交bug, 确认修复, 证通过关闭bug</li>
+<li>编写测试报告</li>
+<li>编写安装文档或者使用手册</li>
+<li>结束</li>
+</ul>
+<h4 id="软件测试手段之黑盒测试"><a href="#软件测试手段之黑盒测试" class="headerlink" title="软件测试手段之黑盒测试"></a>软件测试手段之黑盒测试</h4><ol>
 <li><p>黑盒测试,不考虑内部逻辑,针对外面的界面功能,在用户角度,输入和输出结果</p>
 </li>
 <li><p>关注点:</p>
+<ul>
+<li>功能是否不正确或者遗漏</li>
+<li>接口,输入是否正确接收,输出结果是否正确</li>
+<li>是否有数据结构错误或者外部信息访问错误</li>
+<li>性能是否满足要求</li>
+</ul>
 </li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">功能是否不正确或者遗漏</div><div class="line">接口,输入是否正确接收,输出结果是否正确</div><div class="line">是否有数据结构错误或者外部信息访问错误</div><div class="line">性能是否满足要求</div></pre></td></tr></table></figure>
-<ol>
-<li>测试方法:等价类划分、边界值分析、错误推测、因果图</li>
+<li><p>测试方法:等价类划分、边界值分析、错误推测、因果图</p>
+</li>
 </ol>
 
           
@@ -488,13 +500,13 @@
 <li>向表中新增信息</li>
 </ol>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">insert into table_name(字段1, 字段2, 字段3, ```)</div><div class="line">values(值1,值2,值3,```)</div></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">insert</span> <span class="keyword">into</span> table_name(字段<span class="number">1</span>, 字段<span class="number">2</span>, 字段<span class="number">3</span>, <span class="string">``</span><span class="string">`)</span></div><div class="line"><span class="string">values(值1,值2,值3,`</span><span class="string">``</span>)</div></pre></td></tr></table></figure>
 <blockquote>
 <ol>
 <li>修改表中信息</li>
 </ol>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">update table_name</div><div class="line">set (字段1=值1,````)</div></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">update</span> table_name</div><div class="line"><span class="keyword">set</span> (字段<span class="number">1</span>=值<span class="number">1</span>,<span class="string">``</span><span class="string">``</span>)</div></pre></td></tr></table></figure>
 <blockquote>
 <ol>
 <li>删除表中数据</li>
@@ -1114,7 +1126,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>
